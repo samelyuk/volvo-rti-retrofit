@@ -6,6 +6,17 @@ Welcome to the OpenAutoPro project tailored for the Volvo S60 D5! This project e
 RTI Retrofit - Android Auto
 ![RTI Retrofit - Android Auto](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT2.jpg)
 
+# Special Thanks
+
+I would like to extend my sincere thanks to the following contributors who have greatly contributed to the development and success of this project:
+- **Karl Hagström**: His comprehensive guide on adding AUX functionality to the Volvo HU-XXXX radio has been invaluable. Check out the guide [here](https://gizmosnack.blogspot.com/2015/11/aux-in-volvo-hu-xxxx-radio.html).
+- **"laurynas"**: For developing the Volvo LINbus reader program, which played a crucial role in integrating SWM buttons into the OpenAutoPro system. Find the program [here](https://github.com/laurynas/volvo_linbus).
+- **Luuk**: Their resource on enabling Android Auto on Volvo RTI systems has been immensely helpful. More details can be found [here](https://luuk.cc/p/vD2f/Android_Auto_on_Volvo_RTI).
+- **klalle**: For their helpful scripts and contributions. Check out their GitHub gist [here](https://gist.github.com/klalle/1ae1bfec5e2506918a3f89492180565e).
+
+Your contributions have significantly enriched this project, and I deeply appreciate your efforts. Thank you!
+
+
 ## Table of Contents
 1. [Connection Overview](#connection-overview)
    - [Necessary Components](#necessary-components)
