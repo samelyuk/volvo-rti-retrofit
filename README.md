@@ -3,6 +3,7 @@ Volvo S60 RTI retrofit with Android Auto, Carplay, Handsfree etc.
 
 Welcome to the OpenAutoPro project tailored for the Volvo S60 D5! This project enhances your driving experience by integrating a Raspberry Pi and Arduino into your vehicle, replacing the CD reader from the RTI system. Utilizing the stock RTI display and controls ensures seamless integration.
 
+RTI Retrofit - Android Auto
 ![RTI Retrofit - Android Auto](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT2.jpg)
 
 ## Table of Contents
@@ -30,7 +31,8 @@ Welcome to the OpenAutoPro project tailored for the Volvo S60 D5! This project e
 - Ground Loop Isolator - From Aliexpress (https://shorturl.at/lSVW0)
 - Various cables, connectors, etc.
 
-![RTI Retrofit - OpenAutoPro](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT2.jpg)
+RTI Retrofit - OpenAutoPro
+![RTI Retrofit - OpenAutoPro](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT1.jpg)
 
 ### Cable Management
 Efficient cable management is essential for organizing the components of the OpenAutoPro project within the Volvo S60 D5. Let's discuss how we've optimized cable routing for a tidy and functional setup.
@@ -61,7 +63,9 @@ The SWM buttons from the steering wheel, along with the RTI buttons, will be rea
 ### RTI Control Module Setup
 I have removed almost everything from the RTI Control Module box. I only left two connectors: an 8-pin DIN socket and a 10-pin connector from the display. I have placed all the computing components in this box: Raspberry Pi with all its components, a step-down converter, and two Arduino microcontrollers on a PCB.
 
+RTI New Setup (Will be updated)
 ![RTI New Setup (Will be updated)](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-now.jpg)
+RTI Old Setup
 ![RTI Old Setup](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-old.jpg)
 
 ### AUX Integration
