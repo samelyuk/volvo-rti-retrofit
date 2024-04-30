@@ -30,7 +30,7 @@ Welcome to the OpenAutoPro project tailored for the Volvo S60 D5! This project e
 - Ground Loop Isolator - From Aliexpress (https://shorturl.at/lSVW0)
 - Various cables, connectors, etc.
 
-![RTI Retrofit - OpenAutoPro]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT2.jpg))
+![RTI Retrofit - OpenAutoPro](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT2.jpg)
 
 ### Cable Management
 Efficient cable management is essential for organizing the components of the OpenAutoPro project within the Volvo S60 D5. Let's discuss how we've optimized cable routing for a tidy and functional setup.
@@ -42,9 +42,9 @@ Power Source Selection
 - The 12V socket offers the advantage of cutting off power entirely when the ignition is switched off, reducing the risk of power drain.
 - In future iterations, I plan to incorporate a small battery to maintain power during engine startup, further enhancing system reliability.
 
-![RTI Controll module]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box1.jpg))
-![RTI Controll module Disassembley]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box2.jpg))
-![RTI Controll module Disassembled]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box3.jpg))
+![RTI Controll module]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box1.jpg)
+![RTI Controll module Disassembley](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box2.jpg)
+![RTI Controll module Disassembled](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box3.jpg)
 
 ### Display Cable Connection:
 Incorporating the RTI (Road and Traffic Information) display into the OpenAutoPro system requires a meticulous approach to cable connection. Let's break down the cable setup for seamless integration.
@@ -53,7 +53,7 @@ Cable Components:
 - Ground Cable: Ensures proper grounding for stable operation and electrical safety.
 - Display Serial Cable: Facilitates communication between the display and the system, enabling control and data exchange.
 
-![RTI Display Pinout]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/rti-disp.png))
+![RTI Display Pinout](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/rti-disp.png)
 
 ### SWM Button Configuration - LIN bus
 The SWM buttons from the steering wheel, along with the RTI buttons, will be read through the LIN bus. We will utilize the original Arduino Nano with MCP2025 and the "laurynas" Volvo LINbus reader program (https://github.com/laurynas/volvo_linbus). Simply pressing the required button is sufficient to view the LIN bus key code from our buttons, without the need to turn on the ignition. The key code for the Volvo S60 2008 appears as follows: Enter button: “ C1 3F 20 A0 ”
@@ -61,12 +61,12 @@ The SWM buttons from the steering wheel, along with the RTI buttons, will be rea
 ### RTI Control Module Setup
 I have removed almost everything from the RTI Control Module box. I only left two connectors: an 8-pin DIN socket and a 10-pin connector from the display. I have placed all the computing components in this box: Raspberry Pi with all its components, a step-down converter, and two Arduino microcontrollers on a PCB.
 
-![RTI New Setup (Will be updated)]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-now.jpg))
-![RTI Old Setup]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-old.jpg))
+![RTI New Setup (Will be updated)](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-now.jpg)
+![RTI Old Setup](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-old.jpg)
 
 ### AUX Integration
 While the Volvo S60 from 2008 typically comes equipped with an AUX input, my model had its radio upgraded to the HU-850, an older version lacking this feature. Following Karl Hagström's guide (https://gizmosnack.blogspot.com/2015/11/aux-in-volvo-hu-xxxx-radio.html), I created a CD changer emulator using an Arduino Nano clone.
 
 ## Programming Details (SOON)
 
-![Image Description]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/S60.jpg))
+![Image Description](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/S60.jpg)
