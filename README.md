@@ -21,10 +21,12 @@ Your contributions have significantly enriched this project, and I deeply apprec
 
 ## What is now working:
 - OpenAuto Pro with Bluetooth and internal audio player, hands-free calling, 15 band equalizer, etc.
-- Android Auto
-- The buttons on the steering wheel, including RTI buttons.
+- Android Auto Wireless
+- Original display via serial video
 - Opening and closing the display using buttons Enter+Back.
 - Changing the display brightness, using buttons Next+Yes/No.
+- The buttons on the steering wheel, including RTI buttons.
+
 ## Future works:
 - Add the rear camera
 - Add OBD info
