@@ -3,7 +3,7 @@ Volvo P2 RTI retrofit with Android Auto, Carplay, Handsfree etc.
 
 Version r1.0
 
-Welcome to the OpenAutoPro project tailored for the Volvo P2! This project enhances your driving experience by integrating a Raspberry Pi and Arduino into your vehicle, replacing the CD reader from the RTI system. Utilizing the stock RTI display and controls ensures seamless integration.
+Welcome to the OpenAutoPro project tailored for the Volvo P2! This project enhances your driving experience by integrating a Raspberry Pi and Arduino into your vehicle, replacing the Control Module from the RTI system. Utilizing the stock RTI display and controls ensures seamless integration.
 
 RTI Retrofit - Android Auto
 ![RTI Retrofit - Android Auto](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT2.jpg)
@@ -19,6 +19,16 @@ I would like to extend my sincere thanks to the following contributors who have 
 
 Your contributions have significantly enriched this project, and I deeply appreciate your efforts. Thank you!
 
+## What is now working:
+- OpenAuto Pro with Bluetooth and internal audio player, hands-free calling, 15 band equalizer, etc.
+- Android Auto
+- The buttons on the steering wheel, including RTI buttons.
+- Opening and closing the display using buttons Enter+Back.
+- Changing the display brightness, using buttons Next+Yes/No.
+## Future works:
+- Add the rear camera
+- Add OBD info
+- Add a small battery to maintain power during engine startup
 
 ## Table of Contents
 1. [Connection Overview](#connection-overview)
@@ -83,6 +93,7 @@ I have removed almost everything from the RTI Control Module box. I only left tw
 
 RTI New Setup (Will be updated)
 ![RTI New Setup (Will be updated)](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-now.jpg)
+
 RTI Old Setup
 ![RTI Old Setup](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-old.jpg)
 
