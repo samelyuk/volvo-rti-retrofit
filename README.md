@@ -13,7 +13,7 @@ RTI Retrofit - Android Auto
 I would like to extend my sincere thanks to the following contributors who have greatly contributed to the development and success of this project:
 - **Karl Hagström**: His comprehensive guide on adding AUX functionality to the Volvo HU-XXXX radio has been invaluable. Check out the guide [here](https://gizmosnack.blogspot.com/2015/11/aux-in-volvo-hu-xxxx-radio.html).
 - **klalle**: For updated AUX script and contributions. Check out their GitHub gist [here](https://gist.github.com/klalle/1ae1bfec5e2506918a3f89492180565e).
-- **"laurynas"**: For developing the Volvo LINbus reader program, which played a crucial role in integrating SWM buttons into the OpenAutoPro system. Find the program [here](https://github.com/laurynas/volvo_linbus).
+- **laurynas**: For developing the Volvo LINbus reader program, which played a crucial role in integrating SWM buttons into the OpenAutoPro system. Find the program [here](https://github.com/laurynas/volvo_linbus).
 - **Luuk**: Their resource on enabling Android Auto on Volvo RTI systems has been immensely helpful. More details can be found [here](https://luuk.cc/p/vD2f/Android_Auto_on_Volvo_RTI).
 - **BlueWaveStudio Team** For developing OpenAutoPro. More details can be found [here](https://bluewavestudio.io/).
 
@@ -36,13 +36,13 @@ Your contributions have significantly enriched this project, and I deeply apprec
 
 ### Necessary Components
 - Raspberry Pi 4, 2 GB RAM: SD Card 64GB
-- USB Sound Card Vention (https://www.alza.sk/vention-usb-external-sound-card-0-15m-gray-metal-type-omtp-ctia-d6093937.htm)
-- Bluetooth Orico BTA-409 (https://www.alza.sk/orico-bta-409-biely-d6447277.htm)
+- [USB Sound Card Vention](https://www.alza.sk/vention-usb-external-sound-card-0-15m-gray-metal-type-omtp-ctia-d6093937.htm)
+- Bluetooth [Orico BTA-409](https://www.alza.sk/orico-bta-409-biely-d6447277.htm)
 - Arduino Nano (Original ATmega328) - Clone doesn’t read SWM buttons
 - Arduino Nano (China clone) - For AUX
 - MCP2025 Chip
 - Step-Down Converter 12V-5V, 5A
-- Ground Loop Isolator - From Aliexpress (https://shorturl.at/lSVW0)
+- Ground Loop Isolator - From [Aliexpress](https://shorturl.at/lSVW0)
 - Various cables, connectors, etc.
 
 RTI Retrofit - OpenAutoPro
@@ -74,6 +74,10 @@ Cable Components:
 ### SWM Button Configuration - LIN bus
 The SWM buttons from the steering wheel, along with the RTI buttons, will be read through the LIN bus. We will utilize the original Arduino Nano with MCP2025 and the "laurynas" Volvo LINbus reader program (https://github.com/laurynas/volvo_linbus). Simply pressing the required button is sufficient to view the LIN bus key code from our buttons, without the need to turn on the ignition. The key code for the Volvo S60 2008 appears as follows: Enter button: “ C1 3F 20 A0 ”
 
+The cables from the SWM/SAS are located up to the steering wheel, under the cover. See blue arrow.
+![SWM Location](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/SWM%20Location.png)
+![SWM Pinout](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/SWM%20Pins.png)
+
 ### RTI Control Module Setup
 I have removed almost everything from the RTI Control Module box. I only left two connectors: an 8-pin DIN socket and a 10-pin connector from the display. I have placed all the computing components in this box: Raspberry Pi with all its components, a step-down converter, and two Arduino microcontrollers on a PCB.
 
@@ -84,6 +88,14 @@ RTI Old Setup
 
 ### AUX Integration
 While the Volvo S60 from 2008 typically comes equipped with an AUX input, my model had its radio upgraded to the HU-850, an older version lacking this feature. Following Karl Hagström's guide (https://gizmosnack.blogspot.com/2015/11/aux-in-volvo-hu-xxxx-radio.html), I created a CD changer emulator using an Arduino Nano clone.
+
+![Radio Pinout](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/Radio%20Pins.png)
+
+### RTI Extender Cable Scheme
+![RTI Control Module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI%20Cable%20Extender%20Scheme.jpg)
+
+### RTI Control Module Scheme
+![RTI Control Module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI%20Control%20Module%20Scheme.jpg)
 
 ## Programming Details (SOON)
 
