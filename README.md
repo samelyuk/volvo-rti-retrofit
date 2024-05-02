@@ -1,5 +1,6 @@
-# Volvo-RTI-Retrofit
+# Volvo RTI Retrofit
 Volvo P2 (S60) RTI retrofit with Android Auto, Carplay, Handsfree etc.
+
 Version r1.0
 
 Welcome to the OpenAutoPro project tailored for the Volvo S60 D5! This project enhances your driving experience by integrating a Raspberry Pi and Arduino into your vehicle, replacing the CD reader from the RTI system. Utilizing the stock RTI display and controls ensures seamless integration.
@@ -11,9 +12,10 @@ RTI Retrofit - Android Auto
 
 I would like to extend my sincere thanks to the following contributors who have greatly contributed to the development and success of this project:
 - **Karl Hagström**: His comprehensive guide on adding AUX functionality to the Volvo HU-XXXX radio has been invaluable. Check out the guide [here](https://gizmosnack.blogspot.com/2015/11/aux-in-volvo-hu-xxxx-radio.html).
+- **klalle**: For updated AUX script and contributions. Check out their GitHub gist [here](https://gist.github.com/klalle/1ae1bfec5e2506918a3f89492180565e).
 - **"laurynas"**: For developing the Volvo LINbus reader program, which played a crucial role in integrating SWM buttons into the OpenAutoPro system. Find the program [here](https://github.com/laurynas/volvo_linbus).
 - **Luuk**: Their resource on enabling Android Auto on Volvo RTI systems has been immensely helpful. More details can be found [here](https://luuk.cc/p/vD2f/Android_Auto_on_Volvo_RTI).
-- **klalle**: For their helpful scripts and contributions. Check out their GitHub gist [here](https://gist.github.com/klalle/1ae1bfec5e2506918a3f89492180565e).
+- **BlueWaveStudio Team** For developing OpenAutoPro. More details can be found [here](https://bluewavestudio.io/).
 
 Your contributions have significantly enriched this project, and I deeply appreciate your efforts. Thank you!
 
@@ -56,7 +58,7 @@ Power Source Selection
 - The 12V socket offers the advantage of cutting off power entirely when the ignition is switched off, reducing the risk of power drain.
 - In future iterations, I plan to incorporate a small battery to maintain power during engine startup, further enhancing system reliability.
 
-![RTI Controll module]([image_url](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box1.jpg)
+![RTI Controll module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box1.jpg)
 ![RTI Controll module Disassembley](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box2.jpg)
 ![RTI Controll module Disassembled](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI-box3.jpg)
 
