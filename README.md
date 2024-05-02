@@ -1,9 +1,9 @@
 # Volvo RTI Retrofit
-Volvo P2 (S60) RTI retrofit with Android Auto, Carplay, Handsfree etc.
+Volvo P2 RTI retrofit with Android Auto, Carplay, Handsfree etc.
 
 Version r1.0
 
-Welcome to the OpenAutoPro project tailored for the Volvo S60 D5! This project enhances your driving experience by integrating a Raspberry Pi and Arduino into your vehicle, replacing the CD reader from the RTI system. Utilizing the stock RTI display and controls ensures seamless integration.
+Welcome to the OpenAutoPro project tailored for the Volvo P2! This project enhances your driving experience by integrating a Raspberry Pi and Arduino into your vehicle, replacing the CD reader from the RTI system. Utilizing the stock RTI display and controls ensures seamless integration.
 
 RTI Retrofit - Android Auto
 ![RTI Retrofit - Android Auto](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT2.jpg)
