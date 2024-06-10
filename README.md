@@ -106,6 +106,14 @@ While the Volvo S60 from 2008 typically comes equipped with an AUX input, my mod
 
 ![Radio Pinout](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/Radio%20Pins.png)
 
+### Rear Camera
+I found a rear camera specifically for the Volvo P2, and its installation is straightforward. First, connect the power supply to a stepdown converter from the 12V side. Next, connect the camera's video output to an analog video converter, which then connects to the Raspberry Pi via USB.
+
+To activate the camera when shifting into reverse, we will use a script integrated into OpenAuto Pro. In the rear camera settings, set Pin 17. Then, take two wires from the reverse light and connect them to a relay. Additionally, take two wires from the Raspberry Pi GPIO: 3V3 power and GPIO 17, and connect them to the relay.
+![RPI Gpio](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png)
+
+When the reverse light is activated, the relay open power to GPIO 17 on the Raspberry Pi, prompting OpenAuto Pro to start the camera.
+
 ### RTI Extender Cable Scheme
 ![RTI Control Module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI%20Cable%20Extender%20Scheme.jpg)
 
