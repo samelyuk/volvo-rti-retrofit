@@ -24,13 +24,14 @@ Your contributions have significantly enriched this project, and I deeply apprec
 - Android Auto Wireless
 - Original display via serial video
 - Opening and closing the display using buttons Enter+Back.
-- Changing the display brightness, using buttons Next+Yes/No.
+- Change the display brightness using buttons Next+Yes/No.
 - The buttons on the steering wheel, including RTI buttons.
+- Rear camera
 
 ## Future works:
-- Add the rear camera
 - Add OBD info
 - Add a small battery to maintain power during engine startup
+- A better case for all the components
 
 # Table of Contents
 1. [Connection Overview](#connection-overview)
@@ -51,14 +52,16 @@ Your contributions have significantly enriched this project, and I deeply apprec
 ### Necessary Components
 - Raspberry Pi 4, 2 GB RAM: SD Card 64GB
 - [USB Sound Card Vention](https://www.alza.sk/vention-usb-external-sound-card-0-15m-gray-metal-type-omtp-ctia-d6093937.htm)
-- Bluetooth [Orico BTA-409](https://www.alza.sk/orico-bta-409-biely-d6447277.htm)
+- Bluetooth [C-TECH BTD-02]([https://www.alza.sk/orico-bta-409-biely-d6447277.htm](https://www.alza.sk/c-tech-btd-02-d7866536.htm))
 - Arduino Nano (Original ATmega328) - Clone doesn’t read SWM buttons
 - Arduino Nano (China clone) - For AUX
 - MCP2025 Chip
 - Step-Down Converter 12V-5V, 5A
 - Ground Loop Isolator - From [Aliexpress](https://shorturl.at/lSVW0)
 - Various cables, connectors, etc.
-
+- Rear Camera for P2 [Aliexpress](https://www.aliexpress.com/item/1005006792687999.html?spm=a2g0o.order_list.order_list_main.5.a2201802Ed3mHx)
+- Analog video Converter [Aliexpress](https://www.aliexpress.com/item/1005005445050331.html?spm=a2g0o.order_list.order_list_main.11.a2201802Ed3mHx)
+  
 RTI Retrofit - OpenAutoPro
 ![RTI Retrofit - OpenAutoPro](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/INT1.jpg)
 
@@ -107,12 +110,12 @@ While the Volvo S60 from 2008 typically comes equipped with an AUX input, my mod
 ![Radio Pinout](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/Radio%20Pins.png)
 
 ### Rear Camera
-I found a rear camera specifically for the Volvo P2, and its installation is straightforward. First, connect the power supply to a stepdown converter from the 12V side. Next, connect the camera's video output to an analog video converter, which then connects to the Raspberry Pi via USB.
+I found a rear camera specifically for the Volvo P2, and its installation is straightforward. First, connect the camera power to a step-down converter from the 12V side. Next, connect the camera's video output to an analog video converter, which then connects to the Raspberry Pi via USB.
 
 To activate the camera when shifting into reverse, we will use a script integrated into OpenAuto Pro. In the rear camera settings, set Pin 17. Then, take two wires from the reverse light and connect them to a relay. Additionally, take two wires from the Raspberry Pi GPIO: 3V3 power and GPIO 17, and connect them to the relay.
 ![RPI Gpio](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png)
 
-When the reverse light is activated, the relay open power to GPIO 17 on the Raspberry Pi, prompting OpenAuto Pro to start the camera.
+When the reverse light is activated, the relay opens power to GPIO 17 on the Raspberry Pi, prompting OpenAuto Pro to start the camera.
 
 ### RTI Extender Cable Scheme
 ![RTI Control Module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI%20Cable%20Extender%20Scheme.jpg)
