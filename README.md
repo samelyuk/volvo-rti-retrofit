@@ -127,11 +127,11 @@ When the reverse light is activated, the relay opens power to GPIO 17 on the Ras
 
 ![Image Description](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/S60.jpg)
 
-## Raspberry Pi Setup
+### Raspberry Pi: OpenAutoPro installation, setup, Arduino connectivity, and configuring the splash screen
 
 This guide outlines the steps to configure your Raspberry Pi, including exchanging the Raspberry Pi configuration file, setting up autostart for a button reader, setting the Volvo splash screen, and configuring the equalizer.
 
-### 1. Exchanging the Raspberry Pi Config File
+#### 1. Exchanging the Raspberry Pi Config File
 
 To make necessary system adjustments, you need to edit the Raspberry Pi boot configuration file.
 
@@ -145,7 +145,7 @@ To make necessary system adjustments, you need to edit the Raspberry Pi boot con
 
 3. Save and exit the editor by pressing `Ctrl + X`, then `Y`, and `Enter`.
 
-### 2. Setting Up Autostart for Button Reader
+#### 2. Setting Up Autostart for Button Reader
 
 To ensure that the `run.sh` script (which reads button inputs) runs automatically on startup, follow these steps:
 
@@ -187,7 +187,7 @@ To ensure that the `run.sh` script (which reads button inputs) runs automaticall
     sudo pip3 install pynput
     ```
 
-### 3. Setting the Volvo Splash Screen
+#### 3. Setting the Volvo Splash Screen
 
 To set up the Volvo splash screen on your Raspberry Pi:
 
@@ -198,7 +198,7 @@ To set up the Volvo splash screen on your Raspberry Pi:
     sudo mv /home/pi/splash2.h264 /usr/share/openautopro
     ```
 
-### 4. Exchanging the Equalizer Configuration
+#### 4. Exchanging the Equalizer Configuration
 
 To set up the equalizer configuration:
 
