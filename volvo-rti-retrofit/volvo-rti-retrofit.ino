@@ -44,7 +44,7 @@ SoftwareSerial RTISerial(RTI_RX_PIN, RTI_TX_PIN);
 // No:    C1 1F 0 E0 
 
 
-//BUTTONS
+//BUTTONS - CHANGE TO YOUR BUTTON CODES
 #define JOYSTICK_UP 0x8
 #define JOYSTICK_DOWN 0x4
 #define JOYSTICK_LEFT 0x2
