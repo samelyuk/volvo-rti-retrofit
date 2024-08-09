@@ -126,3 +126,89 @@ When the reverse light is activated, the relay opens power to GPIO 17 on the Ras
 ## Programming Details (SOON)
 
 ![Image Description](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/S60.jpg)
+
+## Raspberry Pi Setup
+
+This guide outlines the steps to configure your Raspberry Pi, including exchanging the Raspberry Pi configuration file, setting up autostart for a button reader, setting the Volvo splash screen, and configuring the equalizer.
+
+### 1. Exchanging the Raspberry Pi Config File
+
+To make necessary system adjustments, you need to edit the Raspberry Pi boot configuration file.
+
+1. Open the Raspberry Pi configuration file using the following command:
+
+    ```bash
+    sudo nano /boot/config.txt
+    ```
+
+2. Modify or add any required settings based on your project’s specifications.
+
+3. Save and exit the editor by pressing `Ctrl + X`, then `Y`, and `Enter`.
+
+### 2. Setting Up Autostart for Button Reader
+
+To ensure that the `run.sh` script (which reads button inputs) runs automatically on startup, follow these steps:
+
+1. Move the `run.sh` script to the `/home/pi` directory:
+
+    ```bash
+    sudo mv /home/pi/run.sh /home/pi
+    ```
+
+2. **Move the `key.py` file to the `/home/pi/Documents/` directory:**
+
+    ```bash
+    sudo mv /home/pi/key.py /home/pi/Documents/
+    ```
+
+3. Edit the autostart file to add the script:
+
+    ```bash
+    sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+    ```
+
+4. Append the following line to the end of the file:
+
+    ```bash
+    @/home/pi/run.sh
+    ```
+
+5. Save and exit the editor by pressing `Ctrl + X`, then `Y`, and `Enter`.
+
+6. Make the `run.sh` script executable:
+
+    ```bash
+    sudo chmod +x /home/pi/run.sh
+    ```
+
+7. Install the required Python package `pynput`:
+
+    ```bash
+    sudo pip3 install pynput
+    ```
+
+### 3. Setting the Volvo Splash Screen
+
+To set up the Volvo splash screen on your Raspberry Pi:
+
+1. Move the splash screen files to the OpenAuto Pro directory:
+
+    ```bash
+    sudo mv /home/pi/splash1.h264 /usr/share/openautopro
+    sudo mv /home/pi/splash2.h264 /usr/share/openautopro
+    ```
+
+### 4. Exchanging the Equalizer Configuration
+
+To set up the equalizer configuration:
+
+1. Move the `key.py` script to the `Documents` directory:
+
+    ```bash
+    sudo mv /home/pi/key.py /home/pi/Documents
+    ```
+
+---
+
+With these steps completed, your Raspberry Pi should be properly configured for your project, with the required scripts and configurations in place.
+
