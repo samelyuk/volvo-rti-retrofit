@@ -48,9 +48,9 @@ def main():
               keyboard.press('b')
               keyboard.release('b')
             if line=='CALL':
-              run('vcgencmd display_power 1', shell=False)
+              run('vcgencmd display_power 1', shell=True)
             if line=='DENY':
-              run('vcgencmd display_power 0', shell=False)
+              run('vcgencmd display_power 0', shell=True)
     ser.close()
     
 if __name__ == '__main__':
