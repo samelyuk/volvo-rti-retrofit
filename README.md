@@ -202,12 +202,8 @@ To set up the Volvo splash screen on your Raspberry Pi:
 
 To set up the equalizer configuration:
 
-1. Move the `key.py` script to the `Documents` directory:
-
-    ```bash
-    sudo mv /home/pi/key.py /home/pi/Documents
-    ```
-
+1. Move the `openauto_equalizer.ini` equalizer settings to: '/home/pi/...'
+   
 ---
 
 With these steps completed, your Raspberry Pi should be properly configured for your project, with the required scripts and configurations in place.
