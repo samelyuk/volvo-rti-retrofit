@@ -197,7 +197,7 @@ void MELBUS_CLOCK_INTERRUPT() {
     EIFR |= (1 << INTF1);
 }
 
-void setup_r() {
+void setup() {
   //Data is deafult input high
   pinMode(MELBUS_DATA, INPUT_PULLUP);
   
@@ -215,7 +215,7 @@ void setup_r() {
 }
 
 //Main loop
-void loop_r() {
+void loop() {
   //Waiting for the clock interrupt to trigger 8 times to read one byte before evaluating the data
 #ifdef SERDBG
   if (ByteIsRead) {
