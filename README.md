@@ -53,11 +53,11 @@ Your contributions have significantly enriched this project, and I deeply apprec
 
 ### Necessary Components
 - Raspberry Pi 4, 2 GB RAM: SD Card 64GB
-- [USB Sound Card Vention](https://www.alza.sk/vention-usb-external-sound-card-0-15m-gray-metal-type-omtp-ctia-d6093937.htm)
-- Bluetooth [C-TECH BTD-02]([https://www.alza.sk/orico-bta-409-biely-d6447277.htm](https://www.alza.sk/c-tech-btd-02-d7866536.htm))
+- USB Sound Card [Vention](https://www.alza.sk/vention-usb-external-sound-card-0-15m-gray-metal-type-omtp-ctia-d6093937.htm)
+- Bluetooth [C-TECH BTD-02](https://www.alza.sk/c-tech-btd-02-d7866536.htm)
 - Arduino Nano (Original ATmega328) - Clone doesn’t read SWM buttons
 - Arduino Nano (China clone) - For AUX
-- MCP2004 Chip [TME]([https://shorturl.at/lSVW0](https://www.tme.eu/sk/details/mcp2004a-e_p/integrovane-obvody-interface-ostatne/microchip-technology/))
+- MCP2004 Chip [TME](https://www.tme.eu/sk/details/mcp2004a-e_p/integrovane-obvody-interface-ostatne/microchip-technology/)
 - Step-Down Converter 12V-5V, 5A
 - Ground Loop Isolator - From [Aliexpress](https://shorturl.at/lSVW0)
 - Various cables, connectors, etc.
@@ -120,7 +120,7 @@ To activate the camera when shifting into reverse, we will use a script integrat
 When the reverse light is activated, the relay opens power to GPIO 17 on the Raspberry Pi, prompting OpenAuto Pro to start the camera.
 
 ### RTI Extender Cable Scheme
-![RTI Control Module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/image.png)
+![RTI Control Module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI%20Cable%20Extender%20Scheme.png)
 
 ### RTI Control Module Scheme
 ![RTI Control Module](https://github.com/samelyuk/volvo-rti-retrofit/blob/main/doc/RTI%20Control%20Module%20Scheme.jpg)
