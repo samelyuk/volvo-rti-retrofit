@@ -33,6 +33,8 @@ Your contributions have significantly enriched this project, and I deeply apprec
 - Add a small battery to maintain power during engine startup
 - A better case for all the components
 
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00.svg?&style=flat&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/samelyuk)
+
 # Table of Contents
 1. [Connection Overview](#connection-overview)
    - [Necessary Components](#necessary-components)
