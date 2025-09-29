@@ -5,8 +5,6 @@ Volvo P2 RTI retrofit with Android Auto, Carplay, Handsfree etc.
 
 Welcome to the OpenAutoPro project tailored for the Volvo P2! This project enhances your driving experience by integrating a Raspberry Pi and Arduino into your vehicle, replacing the Control Module from the RTI system. Utilizing the stock RTI display and controls ensures seamless integration.
 
-For more information: [SpeedXperts website](https://speedxperts.com/volvo-rti-retrofit/)
-
 RTI Retrofit - Android Auto
 ![RTI Retrofit - Android Auto](https://github.com/speedxperts/volvo-rti-retrofit/blob/main/doc/INT2.jpg)
 
